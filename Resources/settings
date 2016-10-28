@@ -1,0 +1,5 @@
+PATH=/Users/work/anowicki
+DATA_SERVER=dmv.tryton.task.gda.pl
+SERVER=kdm.task.gda.pl
+USERNAME=anowicki
+TIMEOUT=30
