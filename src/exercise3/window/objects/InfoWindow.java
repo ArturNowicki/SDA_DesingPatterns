@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class InfoWindow extends CloseableWindow implements MessageWindow {
+public class InfoWindow implements UberWindow {
 
 	private String info;
 

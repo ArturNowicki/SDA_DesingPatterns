@@ -1,5 +1,6 @@
 package exercise2.data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
@@ -7,6 +8,7 @@ public class Node {
 	private List<Integer> neighbours;
 	
 	public Node(int nodeNumber) {
+		this.neighbours = new ArrayList<Integer>();
 		this.nodeNumber = nodeNumber;
 	}
 	

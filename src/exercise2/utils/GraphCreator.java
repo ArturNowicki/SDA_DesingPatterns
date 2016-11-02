@@ -12,8 +12,8 @@ public class GraphCreator {
 		return instance;
 	}
 	
-	public Graph createEmptyGraph(int size) {
-		Graph graph = new Graph(new Strategy1());
+	public Graph createEmptyGraph(int size, IStrategy strategy) {
+		Graph graph = new Graph(strategy);
 		for (int i = 0; i < size; i++) {
 			graph.addNode(new Node(i));
 		}

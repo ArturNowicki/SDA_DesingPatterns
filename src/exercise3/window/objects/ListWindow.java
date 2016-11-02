@@ -2,7 +2,7 @@ package exercise3.window.objects;
 
 import java.util.List;
 
-public class ListWindow  extends CloseableWindow implements MessageWindow {
+public class ListWindow  implements UberWindow {
 
 	private List<String> list;
 

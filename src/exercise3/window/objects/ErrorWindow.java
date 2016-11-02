@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class ErrorWindow extends CloseableWindow implements MessageWindow {
+public class ErrorWindow implements UberWindow {
 
 	private String errorCause;
 	private Integer errorCode;

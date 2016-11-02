@@ -2,6 +2,7 @@ package exercise2.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import exercise2.utils.IStrategy;
 
@@ -14,12 +15,17 @@ public class Graph {
 		this.strategy = strategy;
 	}
 	
+	public Optional<Node> getNode(int nodeNumber) {
+		Optional<Node> node = graph.stream().filter(v -> v.getNodeNumber() == nodeNumber).findFirst();
+		return node;
+	}
+	
 	public void addNode(Node node) {
 		graph.add(node);
 	}
 	
-	public void removeNode(int index) {
-		graph.stream().filter(v -> v.getNodeNumber() != index).collect(Collectors.toList());
+	public void removeNode(int nodeNumber) {
+		graph = graph.stream().filter(v -> v.getNodeNumber() != nodeNumber).collect(Collectors.toList());
 	}
 	
 	public void listNodes() {

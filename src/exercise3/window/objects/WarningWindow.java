@@ -1,12 +1,11 @@
 package exercise3.window.objects;
 
-public class WarningWindow extends CloseableWindow implements MessageWindow {
+public class WarningWindow implements UberWindow {
 
 	private String warningCause;
 	private String warningMessage;
 	
 	public WarningWindow(String warningCause, String warningMessage) {
-		super();
 		this.warningCause = warningCause;
 		this.warningMessage = warningMessage;
 	}

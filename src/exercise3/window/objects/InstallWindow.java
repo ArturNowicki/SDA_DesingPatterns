@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class InstallWindow extends CloseableWindow implements MessageWindow {
+public class InstallWindow implements UberWindow {
 
 	private String packageName;
 	private Double packageSize;
