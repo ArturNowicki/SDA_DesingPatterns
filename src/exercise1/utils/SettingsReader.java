@@ -13,7 +13,7 @@ public class SettingsReader {
 
 	private SettingsReader() {};
 	
-	public static SettingsReader getInstance() {
+	public static SettingsReader getInstance() { // synchronized?
 		return instance;
 	}
 	
