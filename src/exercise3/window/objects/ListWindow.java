@@ -1,16 +1,25 @@
 package exercise3.window.objects;
 
-public class ListWindow implements Window, CloseableWindow {
+import java.util.List;
 
-	
-	@Override
-	public void displayMessage() {
-		System.out.println("Listing...");
+public class ListWindow  extends CloseableWindow implements MessageWindow {
+
+	private List<String> list;
+
+	public ListWindow(List<String> list) {
+		this.list = list;
 	}
 
 	@Override
-	public void close() {
-		System.out.println("ClosingListWindow!");
+	public void displayMessage() {
+		System.out.println("List:");
+		printList();
+	}
+
+	private void printList() {
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
 	}
 
 }

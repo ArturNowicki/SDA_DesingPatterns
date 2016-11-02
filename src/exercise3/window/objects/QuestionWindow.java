@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class QuestionWindow implements Window {
+public class QuestionWindow implements MessageWindow {
 
 	private Integer code;
 

@@ -1,5 +1,7 @@
 package exercise3.window.objects;
 
-public interface CloseableWindow {
-	void close();
+public class CloseableWindow {
+	public void close() {
+		System.out.println("Closing window!");
+	}
 }

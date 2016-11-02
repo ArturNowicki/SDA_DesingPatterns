@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class ErrorWindow implements Window, CloseableWindow {
+public class ErrorWindow extends CloseableWindow implements MessageWindow {
 
 	private String errorCause;
 	private Integer errorCode;
@@ -17,8 +17,4 @@ public class ErrorWindow implements Window, CloseableWindow {
 		System.out.println("ERROR: " + errorCode + ": " + errorCause + ". Severity: " + severity);
 	}
 	
-	@Override
-	public void close() {
-		System.out.println("ClosingErrorWindow!");
-	}
 }

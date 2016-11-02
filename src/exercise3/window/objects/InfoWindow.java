@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class InfoWindow implements Window, CloseableWindow {
+public class InfoWindow extends CloseableWindow implements MessageWindow {
 
 	private String info;
 
@@ -13,8 +13,4 @@ public class InfoWindow implements Window, CloseableWindow {
 		System.out.println(info);
 	}
 
-	@Override
-	public void close() {
-		System.out.println("ClosingInfoWindow!");
-	}
 }

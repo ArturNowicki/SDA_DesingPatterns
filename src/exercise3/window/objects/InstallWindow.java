@@ -1,6 +1,6 @@
 package exercise3.window.objects;
 
-public class InstallWindow implements Window, CloseableWindow {
+public class InstallWindow extends CloseableWindow implements MessageWindow {
 
 	private String packageName;
 	private Double packageSize;
@@ -13,11 +13,6 @@ public class InstallWindow implements Window, CloseableWindow {
 	@Override
 	public void displayMessage() {
 		System.out.println("Installing package: " + packageName + ", size: " + packageSize);
-	}
-
-	@Override
-	public void close() {
-		System.out.println("ClosingInstallWindow!");
 	}
 
 }
